@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Mini Project</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+        <img src="assets/logo.png" class="logo">
+      <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="achievement">Achievement</a></li>
+        <li><a href="profile">Profile</a></li>
+        <li><a href="message">Message Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="home">
+      <h1>Hi <span id="namaData"></span> , Welcome to FC Bayern</h1>
+      <p></p>
+    </div>
+
+    <div class="profile">
+        <p>
+            FC Bayern didirikan pada tahun 1900 oleh sebelas pemain sepak bola yang dipimpin oleh Franz John.[5] Meskipun Bayern memenangkan kejuaraan nasional pertamanya pada tahun 1932,[6] klub tersebut tidak dipilih untuk Bundesliga pada awal tahun 1963.[7] Klub memiliki periode yang sukses terbesar di tengah tahun 1970-an, di bawah kapten dari Franz Beckenbauer, memenangkan Piala Champions tiga kali berturut-turut (1974-1976). Secara keseluruhan, Bayern telah mencapai sebelas final Piala Champions/Liga Champions, yang terakhir memenangkan gelar keenam mereka pada tahun 2020 sebagai bagian dari treble benua. Bayern juga telah memenangkan satu Piala UEFA, satu Piala Winners UEFA, dua Piala Super UEFA, dua Piala Interkontinental dan dua Piala Dunia Antarklub FIFA, membuatnya menjadi salah satu klub Eropa yang paling sukses di dunia. Sejak pembentukan Bundesliga, Bayern telah menjadi klub yang dominan dalam sepak bola Jerman dengan 33 gelar dan telah memenangkan 11 dari 14 gelar terakhir. Mereka memiliki persaingan lokal tradisional dengan TSV 1860 München dan 1. FC Nürnberg, serta persaingan kontemporer dengan Borussia Dortmund.
+        </p>
+     <img src="assets/bayern.png"> </div>
+      <hr>
+    </div>
+
+    <div class="home">
+        <h1>Achievement</h1>
+        <p></p>
+    </div>
+
+    <div class="piala">
+    <div>
+        <div class="circle" style="background-image: url(assets/ucl.jpeg);"></div>
+        <h4>UCL</h4>
+    </div>
+    <div>
+        <div class="circle" style="background-image: url(assets/jerman.jpg);"></div>
+        <h4>League</h4>
+    </div>
+    <div>
+        <div class="circle" style="background-image: url(assets/dfb.jpeg);"></div>
+        <h4>DFB POKAL</h4>
+    </div>
+   </div>
+<hr>
+<section id="message">
+    <div>
+        <div class="Massage" >
+            <h1>Send Massage</h1>
+        </div>
+
+    <div class="pesan">
+        <div class="kotakF">
+            <form name="form" >
+                <div class="row">
+                    <div class="col-25">
+                        <label for="nama">Nama </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="nama" name="nama" placeholder="Masukan Nama">
+                        <p id="errorNama"></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="tanggal">Tanggal Lahir </label>
+                    </div>
+                    <div class="col-75">
+    
+                        <input type="date" id="tanggal" name="tanggal">
+                        <p id="errorTanggal"></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="tanggal">jenis Kelamin </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="radio" id="jk" name="jk" value="laki-laki">
+                        <label for="jk">Laki-Laki</label>
+                        <input type="radio" id="jk" name="jk" value="perempuan">
+                        <label for="jk">Perempuan</label>
+                        <p id="errorJk"></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="pesan">Pesan </label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="pesan" name="pesan" placeholder="Masukan pesan"></textarea>
+                        <p id="errorPesan"></p>
+                    </div>
+                </div>
+
+                <div class="row">
+                   <button type="button" onclick="validateForm()">Kirim</button>
+                </div>
+                </div>
+                <!--Menampikan Hasil Dari Form-->
+                <div class="kotakP">
+                    <div class="judulP">
+                        <h3>Pesan Yang Di Kirimkan</h3>
+                    </div>
+                    <div class="isiP">
+                        <p style="margin-top: 75px;">Nama : <span id="namaData"></span></p>
+                        <p>Tanggal Lahir : <span id="tanggalData"></span></p>
+                        <p>Jenis Kelamin : <span id="jkData"></span></p>
+                        <p>Pesan : <span id="pesanData"></span ></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+  <script src="script.js"></script>
+
+<footer>
+    <hr>
+    <div class="penutup">
+        <p>&copy; 2023 Aufa Edith Ramdani</p>
+    </div>
+</footer>
+
+</body>
+</html>
